@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>traveloka</title>
+		<link rel="stylesheet" href="./assets/css/index1.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="crossorigin="anonymous"referrerpolicy="no-referrer"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="crossorigin="anonymous"referrerpolicy="no-referrer"/>
+	</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <nav class="nav">
+                    <div class="nav__logo">
+                        <h2 class="logo"><a href="#">Traveloka</a></h2>
+                    </div>
+                    <div class="nav__burger" id="burger">
+                        <div class="nav__burger-line"></div>
+                        <div class="nav__burger-line"></div>
+                        <div class="nav__burger-line"></div>
+                    </div>
+                    <ul class="nav__list nav__list--header" id="navList">
+                        <li><a href="./index.html" >Главная</a></li>
+                        <li><a href="./index1.html" class="active">Контакты</a></li>
+                    </ul>
+                    <ul class="nav__login nav__login--header">
+                        <!-- <li><a href="#">Регистрация</a></li>
+                        <li><a href="#" class="btn">Вход</a></li> -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+            <img id="loading-icon" class="loading__icon__image" src="./assets/img/loading.gif" width="30%" height="30%" alt="Loading...">
+
+        <button id="openModalBtn" class="open-modal-button">Открыть форму регистрации</button>
+
+        <div id="registrationModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Регистрация</h2>
+                <form id="registrationForm">
+                    <div class="form-group">
+                        <label for="firstName">Имя:</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Фамилия:</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Пароль:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Подтвердите пароль:</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Зарегистрироваться</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+<footer class="footer">
+        <div class="container">
+            <nav class="nav nav--footer">
+                <div class="nav__logo">
+                    <h2 class="logo logo--footer"><a href="#">Traveloka</a></h2>
+                </div>
+
+                <ul class="nav__list nav__list--footer">
+                    <li><a href="./index.html">Главная</a></li>
+                    <li><a href="#" class="active">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script src="./assets/js/index1.js"></script>
+</body>
+</html>

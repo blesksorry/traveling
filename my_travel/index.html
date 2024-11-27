@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Travel project</title>
+		<link rel="stylesheet" href="./assets/css/index.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="crossorigin="anonymous"referrerpolicy="no-referrer"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="crossorigin="anonymous"referrerpolicy="no-referrer"/>
+	</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <nav class="nav">
+                    <div class="nav__logo">
+                        <h2 class="logo"><a href="#">Traveloka</a></h2>
+                    </div>
+                    <div class="nav__burger" id="burger">
+                        <div class="nav__burger-line"></div>
+                        <div class="nav__burger-line"></div>
+                        <div class="nav__burger-line"></div>
+                    </div>
+                    <ul class="nav__list nav__list--header" id="navList">
+                        <li><a href="#" class="active">Главная</a></li>
+                        <li><a href="./index1.html">Контакты</a></li>
+                    </ul>
+                    <ul class="nav__login nav__login--header">
+                        <!-- <li><a href="#">Регистрация</a></li>
+                        <li><a href="#" class="btn">Вход</a></li> -->
+                    </ul>
+                </nav>
+            </div>
+            <img id="loading-icon" class="loading__icon__image" src="./assets/img/loading.gif" width="30%" height="30%" alt="Loading...">
+
+            <div class="header__row">
+                <div class="header__content">
+                    <h1 class="header__title">Откройте для себя свое любимое место вместе с нами</h1>
+                    <div class="header__text">
+                        <p>Ваше путешествие начинается здесь с наших тщательно подобранных впечатлений от путешествий. Откройте для себя новые горизонты, создайте незабываемые воспоминания и исследуйте мир с помощью наших профессионально составленных маршрутов.</p>
+                    </div>
+                    <div class="header_button">
+                        <a href="./index2.html" class="btn">Исследуй мир</a>
+                    </div>
+                </div>
+
+                <div class="header__img">
+                    <img src="./assets/img/index.jpg" alt="img" />
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="destinations">
+        <div class="container-right">
+            <div class="destinations__row">
+                <div class="destinations__content">
+                    <h2 class="destinations__title">Весь мир с traveloka</h2>
+                    <div class="destinations__text">
+                        <p>Полюбуйтесь красотой мира</p>
+                    </div>
+                    <a href="./index2.html" class="btn">Исследуй сейчас</a>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1732342065623!6m8!1m7!1sDVubMlZymEIAAAQINSR9pA!2m2!1d24.41253504889598!2d54.47484748834667!3f77.35426456791927!4f4.2078608658107015!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+        </div>
+    </section>
+    <section class="customers">
+        <div class="container">
+            <div class="customers__row">
+                <div class="customers__img">
+                    <img src="./assets/img/customers.jpg" alt="Customer" />
+                </div>
+                <div class="customers__content">
+                    <h2 class="customers__title">Что говорят наши пользователи?</h2>
+                    <div class="review__client">
+                        <div class="review__client-avatar">
+                            <img src="./assets/img/account-svgrepo-com.svg" alt="img" />
+                        </div>
+                        <div class="review__client-desc">
+                            <h3 class="review__client-desc-name">Мария</h3>
+                            <p class="review__client-desc-country">Россия, Москва</p>
+                        </div>
+                    
+                        </div>
+                        <div class="review__text">
+                            <p>Удобный путеводитель, помог с выбором досуга.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="subscribe">
+        <div class="container">
+            <div class="subscribe__content">
+                <h2 class="subscribe__title">Подпишитесь, чтобы видеть наши обновления!</h2>
+                <form class="subscribe__form">
+                    <input type="email" class="subscribe__form__input" placeholder="Yourmail@mail.com" />
+                    <button class="btn">Подписка</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <nav class="nav nav--footer">
+                <div class="nav__logo">
+                    <h2 class="logo logo--footer"><a href="#">Traveloka</a></h2>
+                </div>
+
+                <ul class="nav__list nav__list--footer">
+                    <li><a href="#" class="active">Главная</a></li>
+                    <li><a href="./index1.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>
