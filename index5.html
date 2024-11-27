@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cтраны</title>
+    <link rel="stylesheet" href="./assets/css/index5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="crossorigin="anonymous"referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="crossorigin="anonymous"referrerpolicy="no-referrer"/>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__top">
+            <nav class="nav">
+                <div class="nav__logo">
+                    <h2 class="logo"><a href="#">Traveloka</a></h2>
+                </div>
+                <div class="nav__burger" id="burger">
+                    <div class="nav__burger-line"></div>
+                    <div class="nav__burger-line"></div>
+                    <div class="nav__burger-line"></div>
+                </div>
+                <ul class="nav__list nav__list--header" id="navList">
+                    <li><a href="#" class="active">Главная</a></li>
+                    <li><a href="./index1.html">Контакты</a></li>
+                </ul>
+                <ul class="nav__login nav__login--header">
+                    <!-- <li><a href="#">Регистрация</a></li>
+                    <li><a href="#" class="btn">Вход</a></li> -->
+                </ul>
+            </nav>
+        </div>
+
+        <!-- <div id="loading-icon"> -->
+            <img id="loading-icon" class="loading__icon__image" src="./assets/img/loading.gif" width="30%" height="30%" alt="Loading...">
+        <!-- </div> -->
+
+        <div class="header__row">
+            <div class="header__content">
+                <h1 class="header__title">Челябинск</h1>
+                <div class="header__text">
+                    <p>— один из крупнейших промышленных городов России. Но славится он не только индустриальными достижениями, а еще и богатым культурным наследием. </p>
+                </div>
+                <a href="./index3.html" class="btn">Вернуться к выбору города</a>
+            </div>
+        </div>
+        <div class="header__img img">
+            <iframe class="header__img" src="https://www.google.com/maps/embed?pb=!3m2!1sru!2sru!4v1732413963703!5m2!1sru!2sru!6m8!1m7!1sCAoSLEFGMVFpcE9sM3FGVXJfTkl5UG9zNjRHbjA4WGZVRVB1ZlA3Y0FlMmhibjVs!2m2!1d55.16179346836076!2d61.39120531786293!3f250.95500975624287!4f0.9093903374471779!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class= "map" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</header>
+<section class="product">
+    <div class="container">
+        <h1 class="product__title">Достопримечательности</h1>
+        <div class="filters">
+            <input type="text" id="search-input" placeholder="Поиск...">
+            <select id="filter-by">
+                <option value="">Без фильтрации</option>
+                <option value="highest">Наибольшая посещаемость</option>
+                <option value="lowest">Наименьшая посещаемость</option>
+            </select>
+        </div>
+        <div id="loader" class="loader">Загрузка...</div>
+        <div id="attractions-list"></div>
+        <div id="pagination">
+            <button id="prev-page">Предыдущая</button>
+            <span id="page-info"></span>
+            <button id="next-page">Следующая</button>
+        </div>
+    </div>
+    <div class="product__container">
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close"></span>
+                <img id="modal-image" src="" alt="img">
+                <h2 id="modal-name"></h2>
+                <p class="modal-description" id="modal-description"></p>
+                <p class="modal-visitors" id="modal-visitors"></p>
+                <iframe class="modal-maps" src="" id="maps" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p class="modal-text" id="text"></p>
+                <img class="modal-image" src="" id="image" alt="img">
+            </div>
+        </div>
+        <!-- <div class="product__card">
+          
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <iframe src="" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </div>
+        <div class="product__card">
+            <img src="./assets/img/img2.webp" id = '2'  alt="img" class="product__img">
+            <h3 class="product__h3">Театр драмы имени Наума Орлова</h3>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <iframe src="" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        
+        </div>
+        <div class="product__card">
+            <img src="./assets/img/img3.webp" id =  '3' alt="img" class="product__img">
+            <h3 class="product__h3">Государственный исторический музей</h3>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <iframe src="" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="product__card">
+            <img src="./assets/img/img4.jpg" id = '4' alt='img' class="product__img">
+            <h3 class="product__h3">Парк Таганай</h3>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <iframe src="" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="product__card">
+            <img src="./assets/img/img5.jpeg" id ='5' alt="img" class="product__img">
+            <h3 class="product__h3">Сфера любви</h3>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <iframe src="./assets/img/p" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="product__card">
+            <img src="./assets/img/img6.jpg" id ='6' alt="img" class="product__img">
+            <h3 class="product__h3">Памятник Ленина</h3>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <iframe src="./assets/img/pic6.jpg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</section>
+    <footer class="footer">
+        <div class="container">
+            <nav class="nav nav--footer">
+                <div class="nav__logo">
+                    <h2 class="logo logo--footer"><a href="#">Traveloka</a></h2>
+                </div> 
+
+                <ul class="nav__list nav__list--footer">
+                    <li><a href="./index.html">Главная</a></li>
+                    <li><a href="./index1.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script src="./assets/js/index5.js"></script>
+</body>
+</html>
